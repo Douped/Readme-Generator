@@ -34,9 +34,10 @@ function writeToFile(fileName) {
             name: 'credits',
         },
         {
-            type: 'input',
-            message: 'Enter license:',
+            type: 'list',
+            message: 'Choose license:',
             name: 'license',
+            choices: ["mit", "apache2.0", "mpl2.0", "None"],
         },
         {
             type: 'input',
